@@ -7,6 +7,7 @@
         'purchase',
         'project',
         'material_purchase_requisitions',
+        'odoo_job_costing_management',
     ],
     'application':False,
     'installable':True,
