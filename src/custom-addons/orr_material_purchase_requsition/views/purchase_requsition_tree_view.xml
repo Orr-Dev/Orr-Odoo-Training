@@ -1,0 +1,32 @@
+<odoo>
+    <record id="material_purchase_requisition_tree_view_extention" model="ir.ui.view">
+        <field name="name">material.purchase.requesision.tree.view</field>
+        <field name="model">material.purchase.requisition</field>
+        <field name="inherit_id" ref="material_purchase_requisitions.material_purchase_requisition_tree_view"/>
+        <field name="arch" type="xml">
+            <field name="state" position="before">
+                <field name="project_id"/>
+                <field name="partner_id"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="material_purchase_requisition_form_view_extention" model="ir.ui.view">
+            <field name="name">material.purchase.requisition.form.view</field>
+            <field name="model">material.purchase.requisition</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="requisiton_responsible_id" position="before">
+                                    <field name="project_id" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                    <field name="partner_id" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                </field>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+</odoo> 
