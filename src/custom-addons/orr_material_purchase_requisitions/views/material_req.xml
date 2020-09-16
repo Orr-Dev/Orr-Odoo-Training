@@ -5,7 +5,7 @@
     <field name="inherit_id" ref="material_purchase_requisitions.material_purchase_requisition_tree_view"/>
     <field name="arch" type="xml">
           <field name="state" position="before">
-             <field name = "partner_id"  />
+             <field name = "partner_id" />
           </field>
     </field>
 </record>
