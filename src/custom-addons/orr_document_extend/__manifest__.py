@@ -1,9 +1,9 @@
 {
     'name':'Orr Document Exend',
-    'description':'To assign customer to view'
+    'description':'To assign customer to view',
     'author': 'ORR Dev trg',
     'depends':[
-     'base',
+     'base','document'
     ],
     'application':False,
     'installable':True,
