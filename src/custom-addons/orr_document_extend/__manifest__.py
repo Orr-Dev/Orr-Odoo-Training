@@ -3,7 +3,7 @@
     'description':'To assign customer to view',
     'author': 'ORR Dev trg',
     'depends':[
-     'base','document'
+     'base',
     ],
     'application':False,
     'installable':True,

@@ -1,9 +1,9 @@
-from odoo import models, fields,api,_
-from odoo.exceptions import UserError
+from odoo import models, fields,api
+
 
 class IrAttachment(models.Model) :
-
     _inherit = "ir.attachment"
+    
     @api.model
     def default_get(self, fields):
 
