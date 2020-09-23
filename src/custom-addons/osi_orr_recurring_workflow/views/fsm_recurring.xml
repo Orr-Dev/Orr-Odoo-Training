@@ -5,12 +5,12 @@
         <field name="inherit_id" ref="fieldservice_recurring.fsm_recurring_form_view"/>
         <field name="arch" type="xml">
             <field name="company_id" position="after">
-                <field name="fsm_equipment_id"/>
                 <field name="agreement_id"/>
                 <field name="serviceprofile_id"/>
             </field>
             <field name="max_orders" position="after">
                 <field name="project_id"/>
+                <field name="fsm_equipment_id"/>
                 <field name="task_id"/>
             </field>
         </field>
