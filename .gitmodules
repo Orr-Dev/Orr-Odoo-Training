@@ -2,10 +2,10 @@
 	path = odoo
 	url = https://github.com/ursais/odoo.git
 	branch = 12.0
-[submodule "enterprise"]
-	path = src/enterprise
-	url = https://github.com/ursais/enterprise.git
-	branch = 12.0
+ [submodule "enterprise"]
+ 	path = src/enterprise
+ 	url = https://github.com/ursais/enterprise.git
+ 	branch = 12.0
 [submodule "account-invoicing"]
 	path = src/account-invoicing
 	url = https://github.com/ursais/account-invoicing.git
